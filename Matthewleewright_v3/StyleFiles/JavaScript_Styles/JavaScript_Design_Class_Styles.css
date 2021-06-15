@@ -1,0 +1,129 @@
+﻿
+/*--------Allows the header Logo to move to the left and the navigation to move to the right of it when scrolled off start--------*/
+.headerMove {
+    margin-block-start: 0;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 45px;
+    height: 45px;
+    transform: translate(-40%, 20%) !important;
+    transition: transform .35s;
+    display: inline-block;
+    width: 100%;
+    /*below is for if the websites logo is text*/
+    font-family: 'Squada One', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: grey;
+}
+
+/*--------Allows the background header color to transform to become translucent when scrolled off of the 'Top' Section--------*/
+.headerLogoBackGroundTransform {
+    height: 75px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 1);
+    /*background-color: white !important;*/
+    transition: background-color .4s linear;
+    z-index: 10;
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+    /*margin-bottom: 1%;*/
+    width: 100vw;
+}
+
+/*--------Allows the background header color to transform to white when scrolled off of the 'Top' Section--------*/
+.headerLogoBackGroundTransform_changeBackground_color {
+    position: sticky;
+    top: 0;
+    background-color: white !important;
+    /*transition: background-color .3s linear;*/
+    transition: background-color .4s linear;
+    z-index: 10;
+    color: black !important;
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+    /*margin-bottom: 1%;*/
+    /*width: 98.5vw;*/
+}
+
+    .headerLogoBackGroundTransform_changeBackground_color a:hover {
+        color: rgba(37, 60, 84, 1) !important;
+        text-decoration-color: rgba(37, 60, 84, 1) !important;
+    }
+
+/*--------Allows the Navigation Bar to transition to white when scrolled past the start of the second Section--------*/
+.navScrollUpShift_Color_Size {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: white;*/
+    /*transition: all .3s linear;*/
+    box-shadow: none;
+    height: 45px;
+    line-height: 45px;
+}
+/*--------Allows the Navigation Bar's background colors to be removed when it shifts into the header--------*/
+.navUlStyle_removeBackground_color {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    transform: translate(30%, -80%);
+    /* height: 65px; */
+    /* line-height: 65px; */
+    /* margin-top: 10px; */
+    /* width: 65%; */
+    transition: all .3s;
+}
+}
+
+.navLinkStyle_onBackgroundChange {
+    font-family: 'Squada One', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+/*----------Allows the first navigation Button to have underlines on page load to show the current section of page is in active state---------------------------------*/
+.navButtonOnActiveStyle {
+    text-decoration: underline;
+    text-decoration-color: rgba(37, 60, 84, 1);
+}
+
+/*----------Media Queries for Device Responsivness-----------------------------------------------------------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1440px and up) */
+@media screen and (min-width: 1440px) {
+}
+
+
+
+
+/*-----------Not In Use-------------------------------------------------------------------------------------*/
+/*.navScrollUp_Stick {            */
+/*     z-index: 2;                */
+/*     position: -webkit-sticky;  */
+/*     position: sticky;          */
+/*     top: 0;                    */
+/*                                */
+/*}                               */

@@ -1,0 +1,442 @@
+﻿/********** Font Colors **********/
+
+
+html, body {
+    margin: 0;
+    height: 100vw;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../../Pictures/ScenicStream.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    margin: 3%;
+}
+
+/*------------Dynamically Generated Error Dialog Box for contact form------------*/
+#dialogOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(36, 39, 41, .3);
+    width: 100%;
+    z-index: 10 !important;
+}
+
+#dialogBox {
+    display: none;
+    position: fixed;
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 450px;
+    z-index: 10 !important;
+    padding: 7px;
+}
+
+#dialogBox > div {
+    background: #ffffff;
+    margin: 8px;
+}
+
+#dialogBox > div > #dialogBoxHead {
+    background: #ffffff;
+    font-family: 'Squada One', cursive;
+    font-size: 19px;
+    padding: 8px 0 5px 20px;
+    color: grey;
+    text-align: center;
+}
+
+#dialogBoxDirections {
+    background: #ffffff;
+    font-family: 'Squada One', cursive;
+    font-size: 19px;
+    padding: 8px 0 5px 20px;
+    color: darkslategrey;
+}
+
+#dialogBox > div > #dialogBoxBody {
+    background: #ffffff;
+    font-size: 19px;
+    padding: 5px 0 5px 40px;
+    color: #ce4242;
+}
+
+#dialogBox > div > #dialogBoxFooter {
+    background: #ffffff;
+    font-family: 'Squada One', cursive;
+    font-size: 19px;
+    padding: 5px 0 8px 20px;
+    color: darkslategrey;
+    text-align: center;
+}
+/*----------End Dynamically Generated Error Dialog Box for contact form----------*/
+
+#headerLogoBackground {
+    background-color: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*margin-bottom: 1%;*/
+    /*width: 98.5vw;*/
+}
+
+#headerLogo {
+    text-align: center;
+}
+
+#headerLogo a {
+    font-family: 'Squada One', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: #775e4b;
+}
+
+#headerLogo a:focus {
+    outline: none;
+    color: darkslategrey;
+}
+
+#navRaise {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+.navUlStyle {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e1e1df;
+    box-shadow: 0 4px 9px black;
+    height: 45px;
+    line-height: 45px;
+}
+/*.navChangeOnScrollFromTop {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: none;
+    height: 45px;
+    line-height: 45px;
+    position: sticky;
+    top: 0;
+    transition: background-color .3s linear;
+}*/
+
+nav li {
+    float: left;
+    width: 8%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+nav a {
+    font-family: 'Squada One', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+nav a:focus {
+    color: darkslategrey !important;
+    outline: none;
+}
+
+li a:hover {
+    color: darkslategray !important;
+    text-decoration-color: darkslategrey !important;
+}
+
+#topIntro {
+    /*margin-top: 35%;*/
+    width: 96%;
+    height: 30%;
+    padding: 2%;
+    background: white;
+    z-index: 0;
+}
+
+.introP {
+    z-index: 1;
+    color: darkslategrey;
+    /*text-align: center;*/
+    margin-top: 5%;
+    margin-bottom: 7%;
+    margin-left: 8%; /* check with Samuel to see if he want this style for a Quote -  instead of *Welcome To Total Career Freedom* center aligned*/
+    margin-right: 35%;
+    font-family: 'Squada One', cursive; /*'Pinyon Script', cursive;*/
+    font-size: 35px;
+    /*font-weight: bold;*/
+}
+
+#ButtonCenter {
+    margin-top: 10vw;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.buttonStyle {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: calibri;
+    background-color: darkslategrey;
+    color: #ffffff;
+    display: inline-block; /* for the <a> (achor tag) links which have this class to make it act like a button / since this is the default display for <button> they won't be affected.*/
+    line-height: 40px;
+    height: 40px;
+    width: 150px;
+    transition: transform .2s;
+}
+
+.buttonStyle:hover {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: calibri;
+    background-color: #365a5a;
+    line-height: 40px;
+    height: 40px;
+    width: 150px;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari prior 9.0 */
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+#Services {
+    /*height: 1vw;*/
+}
+
+.servicesTitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: darkslategrey;
+    padding-top: 5vw;
+    font-family: 'Squada One', cursive;
+    font-size: 32px;
+    margin-block-start: unset;
+    margin-block-end: unset;
+}
+
+#innerWrapper {
+    /*width: 98.7vw;*/
+    background-color: white;
+    /*box-shadow: 0 4px 9px black;*/
+}
+
+#middleServicesLeft {
+    margin-top: 2vw;
+    width: 41%; /*was 39%*/
+    background-color: grey;
+    height: 450px;
+    display: inline-block;
+    margin-left: 1%;
+    /*border: 1px solid darkslategrey;*/
+    margin-bottom: 5%;
+    /*box-shadow: 0 2px 7px black;*/
+    z-index: 1;
+}
+
+#videoServicesRight {
+    margin-top: 2vw;
+    width: 57%; /*was 58%*/
+    height: 450px;
+    /*background-color: grey;*/
+    float: right;
+    display: inline-block;
+    margin-right: 1%;
+    /*border: 1px solid darkslategrey;*/
+    margin-bottom: 5%;
+    /*box-shadow: 0 2px 7px black;*/
+    z-index: 1;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#foundationSection {
+    background-color: black;
+    background-image: url(../../Pictures/Trumpet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    /* Below is the position and formatting of the foundation section */
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    height: 25vw; /*works in conjuction with html parent having a height of 100vw (viewport window)*/
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    margin-bottom: -10vw; /* counters the 10vw of height added to the foundationContent */
+}
+
+#foundationContent {
+    width: 70%;
+    height: 10vw;
+    padding: 15px;
+    /*vertical-align: middle;*/
+    /*margin-top: 10%;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40%;
+    z-index: 2;
+    border-radius: 30px;
+    /*box-shadow: 1px 1px 7px #000;*/
+    background-color: rgba(225, 225, 223, .9);
+}
+
+#foundationPitch {
+    font-size: 30px;
+    color: grey;
+}
+
+#Contact {
+    height: 4vw;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#bottomContact {
+    width: 100%;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.contactTitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: darkslategrey;
+    /*border-bottom: 1px solid darkslategrey;*/
+    padding-bottom: 2vw;
+    /*width: 80vw;*/
+    font-family: 'Squada One', cursive;
+    font-size: 32px;
+}
+
+form {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+label {
+    color: darkslategrey;
+}
+
+input {
+    font-size: 16px;
+    padding-left: 8px;
+    margin-top: 8px;
+    width: 50%;
+    height: 30px;
+    display: block;
+    border-style: none;
+    color: darkslategrey;
+    border-radius: 30px;
+    background-color: rgba(165, 195, 185, .65)
+}
+
+input:focus {
+    background-color: #e1e1df;
+    outline: none;
+}
+
+#comments {
+    font-size: 16px;
+    padding-left: 8px;
+    margin-top: 8px;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    display: block;
+    /*border: 1px solid darkslategrey;*/
+    border-style: none;
+    color: #105A89;
+    border-radius: 3px;
+    background-color: rgba(165, 195, 185, .65);
+}
+
+#comments:focus {
+    background-color: #e1e1df;
+    outline: none;
+}
+
+#submit {
+    margin-top: 10px;
+    width: 20%;
+    display: block;
+    /*border: 1px solid #242729;*/
+    background-color: grey;
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+#submit:hover {
+    margin-top: 10px;
+    width: 20%;
+    display: block;
+    /*border: 1px solid #ffffff;*/
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: darkslategrey;
+}
+
+footer {
+    width: 100%;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    background-color: #242729;
+    box-shadow: 0 -1px 7px #000;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
